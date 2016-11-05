@@ -11,13 +11,21 @@ public class Card {
   }
 
   public ValueType getValue() {
-    return this.value;
+    return value;
   }
+
+  public void setValue(ValueType value) {
+      this.value = value;
+    }
 
   public SuitType getSuit() {
-    return this.suit;
+    return suit;
   }
 
+  public void setSuit(SuitType suit) {
+    this.suit = suit;
+  }
+  
   public String toString() {
     return ValueType.TWO + " of " + SuitType.CLUBS;
   }
