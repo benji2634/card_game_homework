@@ -1,32 +1,33 @@
 package game_management;
+import game_management.*;
 
 public class Card {
 
-  private ValueType value;
+  private ValueType valueType;
   private SuitType suit;
 
-  public Card(ValueType value, SuitType suit) {
-    this.value = value;
+  public Card(ValueType valueType, SuitType suit) {
+    this.valueType = valueType;
     this.suit = suit;
   }
 
-  public ValueType getValue() {
-    return value;
+  public ValueType getValueType() {
+    return valueType;
   }
 
-  public void setValue(ValueType value) {
-      this.value = value;
-    }
+  // public void setValueType(ValueType valueType) {
+  //     this.valueType = valueType;
+  //   }
 
-  public SuitType getSuit() {
+  public SuitType getSuitType() {
     return suit;
   }
 
-  public void setSuit(SuitType suit) {
-    this.suit = suit;
-  }
+  // public void setSuitType(SuitType suit) {
+  //   this.suit = suit;
+  // }
   
   public String toString() {
-    return ValueType.TWO + " of " + SuitType.CLUBS;
+    return this.valueType + " of " + this.suit;
   }
 }

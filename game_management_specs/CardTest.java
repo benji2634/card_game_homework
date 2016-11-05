@@ -13,17 +13,17 @@ public class CardTest {
 
   @Test
   public void canGetValueType() {
-    assertEquals(ValueType.ACE, card.getValue());
+    assertEquals(ValueType.ACE, card.getValueType());
   }
 
   @Test
   public void canGetSuitType() {
-    assertEquals(SuitType.SPADES, card.getSuit());
+    assertEquals(SuitType.SPADES, card.getSuitType());
   }
 
   @Test
   public void canPrintString() {
-    Card twoOfClubs = new Card(ValueType.TWO, SuitType.CLUBS);
-    assertEquals("TWO of CLUBS", twoOfClubs.toString());
+    Card aceOfSpades = new Card(ValueType.ACE, SuitType.SPADES);
+    assertEquals("ACE of SPADES", aceOfSpades.toString());
   }
 }
