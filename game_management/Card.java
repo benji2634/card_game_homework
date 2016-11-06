@@ -3,22 +3,23 @@ import game_management.*;
 
 public class Card {
 
-  private ValueType valueType;
+  private ValueType value;
   private SuitType suit;
 
   public Card(ValueType theValue, SuitType theSuit) {
    if (theSuit != SuitType.SPADES && theSuit != SuitType.HEARTS && theSuit != SuitType.DIAMONDS && theSuit != SuitType.CLUBS) throw new IllegalArgumentException("Illegal playing card suit");
+   // Can't get this part to work:
    // if (theValue < 1 || theValue > 11) throw new IllegalArgumentException("Illegal playing card value");
-   this.valueType = theValue;
+   this.value = theValue;
    this.suit = theSuit;
  }
 
   public ValueType getValueType() {
-    return valueType;
+    return value;
   }
 
-  public void setValueType(ValueType valueType) {
-      this.valueType = valueType;
+  public void setValueType(ValueType value) {
+      this.value = value;
     }
 
   public SuitType getSuitType() {
@@ -30,6 +31,6 @@ public class Card {
   }
   
   public String toString() {
-    return this.valueType + " of " + this.suit;
+    return this.value + " of " + this.suit;
   }
 }
