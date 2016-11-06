@@ -30,7 +30,7 @@ public class Player{
   public int getTotalValue() {
    int total = 0;
    for(Card card : hand){
-    cardValue = (int) card.getValueType();
+    int cardValue = (int) card.getValueType();
      total += cardValue;
    }
    return total;
