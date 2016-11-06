@@ -1,19 +1,20 @@
-// import static org.junit.Assert.*;
-// import org.junit.*;
-// import game_management.*;
+import game_management.*;
 
-// public class DeckTest {
+import static org.junit.Assert.*;
+import org.junit.*;
 
-//   Deck deck;
+public class DeckTest {
 
-//   @Before
-//   public void before() {
-//     deck = new Deck();
-//   }
+  Deck deck;
 
-//   @Test
-//   public void hasDeckOf52(){
-//     assertEquals(52, game.getDeck().size());
-//   }
+  @Before
+  public void before() {
+    deck = new Deck();
+  }
 
-// }
+  @Test
+  public void hasDeckOf52(){
+    assertEquals(52, deck.getDeck().size());
+  }
+
+}
