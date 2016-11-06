@@ -1,6 +1,7 @@
 package game_management;
 
 public enum ValueType {
+  ACE(1),
   TWO(2),
   THREE(3),
   FOUR(4),
@@ -12,9 +13,8 @@ public enum ValueType {
   TEN(10),
   JACK(10),
   QUEEN(10),
-  KING(10),
-  ACE(11);
- 
+  KING(10);
+
   public int valueType;
  
   private ValueType (int value)

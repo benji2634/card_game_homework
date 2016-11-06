@@ -27,4 +27,13 @@ public class Player{
     return this.hand[0].toString() + ", " + this.hand[1].toString();
   }
 
+  public int getTotalValue() {
+   int total = 0;
+   for(Card card : hand){
+    cardValue = (int) card.getValueType();
+     total += cardValue;
+   }
+   return total;
+ }
+
 }
